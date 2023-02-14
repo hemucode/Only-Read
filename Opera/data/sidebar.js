@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   var iframe = document.getElementById("sidebar-iframe");
-  if (iframe.src === "about:blank") iframe.src = "https://www.youtube.com/";
+  if (iframe.src === "about:blank") iframe.src = "https://www.facebook.com/";
   /*  */
   var head = document.documentElement || document.head || document.querySelector("head");
   if (head) {

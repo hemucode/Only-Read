@@ -9,6 +9,6 @@
                 { "header": "content-security-policy", "operation": "remove" }
             ]
          },
-        "condition": { "urlFilter": "||youtube.com^", "resourceTypes": ["sub_frame"] }
+        "condition": { "urlFilter": "||facebook.com^", "resourceTypes": ["sub_frame"] }
     }
 ]
