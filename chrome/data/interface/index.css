@@ -1,0 +1,289 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: arial, sans-serif;
+}
+
+.donation svg
+{
+  fill:#ffb3b3;
+  -webkit-animation-name:heartbeat;
+  animation-name:heartbeat;
+  -webkit-animation-duration:1.42857s;
+  animation-duration:1.42857s;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease;
+  animation-timing-function:ease
+}
+  @-webkit-keyframes heartbeat
+{
+  0%
+{
+  fill:#ffb3b3
+}
+  35%
+{
+  fill:#ff1a1a
+}
+  100%
+{
+  fill:#ffb3b3
+}
+
+}
+  @keyframes heartbeat
+{
+  0%
+{
+  fill:#ffb3b3
+}
+  35%
+{
+  fill:#ff1a1a
+}
+  100%
+{
+  fill:#ffb3b3
+}
+
+}
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+svg {
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
+.toolbar {
+  top: 0;
+  left: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: fixed;
+}
+
+.toolbar[state='hide'] table tr td:not(.show) {
+  display: none;
+}
+
+.toolbar[state='hide'] table {
+  background-color: transparent;
+}
+
+.toolbar[state='hide'] table tr td {
+  background-color: transparent;
+}
+
+.toolbar[state='hide'] table tr td svg {
+  fill: #7c7c7c;
+}
+
+.toolbar[state='hide'] table tr td svg polyline {
+  stroke: #7c7c7c;
+}
+
+.toolbar[state='show'] table tr td {
+  border-bottom: solid 1px #7c7c7c;
+}
+
+.toolbar[state='show'] table tr .hide {
+  border-bottom: none;
+}
+
+.toolbar[state='show'] .show {
+  display: none;
+}
+
+.toolbar table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.toolbar table tr td {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 48px;
+    user-select: none;
+    text-align: center;
+    font-family: monospace;
+}
+
+.container {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  height: 100%;
+  outline: none;
+  display: flex;
+}
+
+.settings {
+  margin: 0;
+  border: 0;
+  top: 42px;
+  padding: 0;
+  left: 59px;
+  display: none;
+  position: fixed;
+}
+
+.settings table {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  table-layout: fixed;
+  border-spacing: 1px 0;
+  transition: 300ms ease all;
+  border-top: solid 1px #797979;
+}
+
+.settings table tr td {
+  padding: 0;
+  width: 180px;
+  height: 52px;
+  outline: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 52px;
+  text-align: center;
+  font-family: monospace;
+  border-bottom: solid 1px #797979;
+}
+
+.settings .serif, .settings .sans-serif {
+  font-size: 42px !important;
+  line-height: 82px !important;
+}
+
+.settings .serif::after, .settings .sans-serif::after {
+  height: 28px;
+  display: block;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  background: transparent;
+}
+
+.settings .serif::after {content: "Serif"}
+.settings .serif {font-family: serif !important}
+.settings .sans-serif::after {content: "Sans-serif"}
+.settings .sans-serif {font-family: sans-serif !important}
+
+.settings table table {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-spacing: 0;
+  table-layout: fixed;
+  background-color: transparent;
+}
+
+.theme {
+  font-size: 14px !important;
+  font-family: arial !important;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  top: 64px;
+  left: 49px;
+  display: none;
+  position: fixed;
+  transition: 300ms ease all;
+  border-right: 10px solid #e6e6e6;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.toolbar table, .settings table {
+  background-color: grey;
+}
+
+.toolbar table tr td, .settings table tr td {
+  color: #e6e6e6;
+  background-color: #444;
+}
+
+.light {
+  color: #555 !important;
+  background-color: #f1f1f1 !important;
+}
+
+.dark {
+  color: #e6e6e6 !important;
+  background-color: #333 !important;
+}
+
+.sepia {
+  color: #555 !important;
+  background-color: #f4ecd8 !important;
+}
+
+.black {
+  color: white !important;
+  background-color: black !important;
+}
+
+.indRed {
+  color: #e6e6e6 !important;
+  background-color: #660000 !important;
+}
+
+.HotPink {
+  color: #e6e6e6 !important;
+  background-color: #5c163d !important;
+}
+
+.Indigo{
+  color: #e6e6e6 !important;
+  background-color: #4B0082 !important;
+}
+
+.Teal{
+  color: #e6e6e6 !important;
+  background-color: #102424 !important;
+}
+.Steel{
+  color: #e6e6e6 !important;
+  background-color: #153c5c !important;
+}
+
+.reader-view {
+  font-family: arial !important;
+}
+
+.settings table tr td[selected] {
+  border-bottom: solid 1px #6fa8ed;
+}
